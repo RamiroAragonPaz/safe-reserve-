@@ -29,9 +29,6 @@
 
     <div class="div-form">
         <form>
-            <label for="nombre_usuario">Nombre de Usuario:</label>
-            <input type="text" id="nombre_usuario" name="nombre_usuario" required><br><br>
-    
             <label for="wallet">Selecciona una Wallet:</label>
             <select id="wallet" name="wallet" required>
                 <option value="Metamask">Metamask</option>
@@ -39,13 +36,10 @@
                 <option value="Trust Wallet">Trust Wallet</option>
             </select><br><br>
     
-            <label for="metodo_pago">Método de Pago:</label>
-            <input type="text" id="metodo_pago" name="metodo_pago" required><br><br>
-    
             <label for="direccion_wallet">Dirección de la Wallet:</label>
             <input type="text" id="direccion_wallet" name="direccion_wallet" required><br><br>
     
-            <input type="submit" value="Guardar">
+            <a href="asociawallet.html"><input  type="submit" value="Guardar y continuar" onclick="mostrarGuardado()"></a>
 
         </form>
     </div>
