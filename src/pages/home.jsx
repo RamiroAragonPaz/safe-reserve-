@@ -9,7 +9,7 @@ const Home = () => (
       <Link to="/signin">
         <button className="button-49">Registrate</button>
       </Link>
-      <Link to="/ingresar">
+      <Link to="/login">
         <button className="button-49">Ingresa</button>
       </Link>
     </div>

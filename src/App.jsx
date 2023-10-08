@@ -3,6 +3,7 @@ import Navbar from "./components/NavBar"
 import Home from "./pages/home"
 import FormSignUp from './pages/formSignUp';
 import MainPage from './pages/mainPage';
+import FormLogIn from './pages/formLogIn';
 
 function App() {
    return (
@@ -12,6 +13,7 @@ function App() {
     <Routes>          
         <Route path="/" element={<Home />} />  
         <Route path="/signin" element={<FormSignUp />} /> 
+        <Route path="/login" element={<FormLogIn />} /> 
         <Route path="/mainpage" element={<MainPage />} />  
       </Routes>    
       </Router>
