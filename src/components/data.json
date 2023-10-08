@@ -1,0 +1,32 @@
+[
+    {
+        "location": "Buenos Aires, Argentina",
+        "type": "Casa",
+        "rooms": "2",
+        "images": "foto1.jpg"
+    },
+    {
+        "location": "Cariló, Argentina",
+        "type": "Casa",
+        "rooms": "4",
+        "images": "foto2.jpg"
+    },
+    {
+        "location": "Córdoba, Argentina",
+        "type": "Departamento",
+        "rooms": "1",
+        "images": "foto4.jpeg"
+    },
+    {
+        "location": "La Plata, Argentina",
+        "type": "Casa",
+        "rooms": "3",
+        "images": "foto3.jpg"
+    },
+    {
+        "location": "Pinamar, Argentina",
+        "type": "Departamento",
+        "rooms": "2",
+        "images": "foto5.jpeg"
+    }
+]

@@ -249,3 +249,35 @@ select#wallet {
     display: flex;
     justify-content: center;
 }
+
+h3{
+    text-align: center;
+    color: white
+}
+.houses-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card{
+    margin: 10px 10px;
+    min-height: 400px;
+    width: 30%;
+    background-color: rgb(126, 126, 126);
+    border-radius: 4px;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: all 0.1s ease-in-out;
+}
+.img-container{
+    width: 100%;
+}
+.img-element{
+    width: 100%;
+}
