@@ -17,14 +17,32 @@ body {
     background-color: var(--color-primario);
 }
 
-.container-navbar {
+.container-navbar {  
+    width: 100%;  
     display: flex;
-    margin: 0 auto;
+    justify-content: space-evenly;
+    margin: 0 0 0 auto;
+}
+
+.first-container{
+    width: 33%;
+}
+
+.img-container{
+    width: 33%;
+    display: flex;
+    justify-content: center;
 }
 
 img {
     width: 6rem;
     
+}
+
+.wallet-container{
+    width: 33%;
+    display: flex;
+    justify-content: end;
 }
 
 .title-index {
@@ -224,4 +242,10 @@ select#wallet {
     width: 450px; 
     height: 40px; 
     font-size: 16px; 
+}
+
+.button-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
