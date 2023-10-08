@@ -24,7 +24,7 @@ const FormSignIn = () => {
     else{
       setRespuestaAPI(response);
       localStorage.setItem('userId', response.data.ID_User_Pk);
-      localStorage.setItem('userName', response.data.Name_User); 
+      localStorage.setItem('userName', usuario); 
       navigate('/mainpage');
    }
   } catch (error) {
