@@ -13,8 +13,7 @@ const FormLogIn = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const userData = {
-      
+    const userData = {      
       Email_User: email,
       Password_User: contrasena,
     };
@@ -26,6 +25,8 @@ const FormLogIn = () => {
 
     }else{
     setRespuestaAPI(response);
+    localStorage.setItem('userId', response.data.ID_User_Pk);
+    localStorage.setItem('userName', response.data.Name_User);
     navigate('/mainpage'); 
     }
   } catch (error) {

@@ -5,14 +5,17 @@ import data from '../components/data.json'
 const MainPage = () => {
 
   const housesData = data;
+  const userName = localStorage.getItem('userName');
 
   return(
       <>
       <div className='button-container'>
         <ConnectButton />
       </div>
-      <h1 className="title-index">Safe Reserve - Tu alquiler seguro</h1>
+      <h1 className="title-index">Bienvenido {userName} </h1>
       <p>Encontrar un lugar seguro para disfrutar tus momentos, nunca fue más seguro y fácil gracias a la Web3</p>
+      
+      
       <h3>ESTAS SON TUS PROPIEDADES</h3>
       <div className='houses-container'>
       {housesData.map((house, index)=>{

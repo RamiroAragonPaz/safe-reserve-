@@ -20,8 +20,13 @@ const FormSignIn = () => {
   
   try {
     const response = await registerUser(userData);
-    setRespuestaAPI(response);
-    navigate('/mainpage'); 
+    if(response.estado === false){}
+    else{
+      setRespuestaAPI(response);
+      localStorage.setItem('userId', response.data.ID_User_Pk);
+      localStorage.setItem('userName', response.data.Name_User); 
+      navigate('/mainpage');
+   }
   } catch (error) {
     // Handle errors
     console.error(error);

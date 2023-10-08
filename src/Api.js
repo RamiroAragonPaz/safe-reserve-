@@ -42,4 +42,24 @@ export const loginUser = async (userData) => {
       throw error;
     }
   };
+
+  export const getHouses = async (userId) => {
+    try {
+      const response = await fetch(`http://3.15.29.166:3002/v1/user/${userId}/houses`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
   
+      if (response.ok) {
+        const data = await response.json();
+        return data;
+      } else {
+        throw new Error('Error al obtener las casas del usuario');
+      }
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  };
