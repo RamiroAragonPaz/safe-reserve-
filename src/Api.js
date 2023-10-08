@@ -23,7 +23,7 @@ export const registerUser = async (userData) => {
 
 export const loginUser = async (userData) => {
     try {
-      const response = await fetch(`https://safe-reserve-api.onrender.com//v1/user/login`, {
+      const response = await fetch(`https://safe-reserve-api.onrender.com/v1/user/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
