@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
- 
+import { useNavigate } from 'react-router-dom';
 import { registerUser } from '../Api'; 
 
 
@@ -8,6 +8,7 @@ const FormSignIn = () => {
   const [email, setEmail] = useState('');
   const [contrasena, setContrasena] = useState('');
   const [respuestaAPI, setRespuestaAPI] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -20,6 +21,7 @@ const FormSignIn = () => {
   try {
     const response = await registerUser(userData);
     setRespuestaAPI(response);
+    navigate('/mainpage'); 
   } catch (error) {
     // Handle errors
     console.error(error);
