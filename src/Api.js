@@ -1,7 +1,7 @@
 // Función para enviar una solicitud POST al endpoint de registro
 export const registerUser = async (userData) => {
   try {
-    const response = await fetch(`http://3.15.29.166:3002/v1/user/signup`, {
+    const response = await fetch(`https://safe-reserve-api.onrender.com/v1/user/signup`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ export const registerUser = async (userData) => {
 
 export const loginUser = async (userData) => {
     try {
-      const response = await fetch(`http://3.15.29.166:3002/v1/user/login`, {
+      const response = await fetch(`https://safe-reserve-api.onrender.com//v1/user/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ export const loginUser = async (userData) => {
 
   export const getHouses = async (userId) => {
     try {
-      const response = await fetch(`http://3.15.29.166:3002/v1/user/${userId}/houses`, {
+      const response = await fetch(`https://safe-reserve-api.onrender.com/v1/user/${userId}/houses`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
